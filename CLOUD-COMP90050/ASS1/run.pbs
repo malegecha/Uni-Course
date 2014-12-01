@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+#PBS -N COMP90024-ass1
+#PBS -q parallel
+#PBS -l nodes=2:ppn=4
+#PBS -l walltime=01:00:00
+#
+mpirun -n 8 ./run -f /home/projects/pMelb0204/data/CCCdata-small.txt -k is
